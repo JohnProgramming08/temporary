@@ -14,3 +14,17 @@ def is_prime(n: int) -> bool:
             return False
 
     return n != 1
+
+
+# Output the first n terms of the fibbonacci sequence
+def fib_sequence(n: int) -> None:
+    current_term = 1
+    previous_term = 0
+    for i in range(n):
+        print(current_term)
+        temp = current_term
+        current_term += previous_term
+        previous_term = temp
+
+
+fib_sequence(5)
