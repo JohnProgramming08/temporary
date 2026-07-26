@@ -1,3 +1,5 @@
+from random import choice
+
 print("All even numbers between 2 and 100 inclusive.")
 for i in range(2, 101, 2):
     print(i)
@@ -27,4 +29,19 @@ def fib_sequence(n: int) -> None:
         previous_term = temp
 
 
-fib_sequence(5)
+# Return a random word
+def random_word() -> str:
+    words = [
+        "Sigma",
+        "Dope",
+        "Labour",
+        "Greens",
+        "Tory",
+        "Reform",
+        "Restore",
+        "Mayor",
+    ]
+    return choice(words)
+
+
+print(random_word())
