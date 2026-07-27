@@ -44,4 +44,10 @@ def random_word() -> str:
     return choice(words)
 
 
-print(random_word())
+# Return a string with the first letters of each word in a given string
+def first_letters(strng: str) -> str:
+    strng = strng.split(" ")
+    return "".join([word[0] for word in strng])
+
+
+print(first_letters("Oh My God"))
