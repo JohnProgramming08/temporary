@@ -1,4 +1,5 @@
 from random import choice
+import requests
 
 print("All even numbers between 2 and 100 inclusive.")
 for i in range(2, 101, 2):
@@ -62,3 +63,5 @@ def get_factor_pairs(num: int) -> list:
 
 
 print(get_factor_pairs(10))
+print(first_letters("Oh My God"))
+requests.get("https://google.com")
