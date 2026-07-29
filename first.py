@@ -50,4 +50,15 @@ def first_letters(strng: str) -> str:
     return "".join([word[0] for word in strng])
 
 
-print(first_letters("Oh My God"))
+# Return a list of pairs of factors of a given number
+def get_factor_pairs(num: int) -> list:
+    res = []
+    target = int(num**0.5) + 1
+    for i in range(1, target):
+        if num % i == 0:
+            res.append((i, num // i))
+
+    return res
+
+
+print(get_factor_pairs(10))
