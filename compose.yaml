@@ -1,0 +1,4 @@
+services:
+  temporary:
+    container_name: "sigma_male"
+    build: .
