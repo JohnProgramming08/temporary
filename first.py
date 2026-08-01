@@ -63,5 +63,5 @@ def get_factor_pairs(num: int) -> list:
 
 
 print(get_factor_pairs(10))
-print(first_letters("Some Random Things"))
+print(first_letters("B e v C r a i g For The Win"))
 requests.get("https://labour.org.uk")
