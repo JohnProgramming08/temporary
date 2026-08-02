@@ -62,6 +62,11 @@ def get_factor_pairs(num: int) -> list:
     return res
 
 
-print(get_factor_pairs(10))
-print(first_letters("B e v C r a i g For The Win"))
+# Return if a given number is a square number
+def is_square(num: int) -> bool:
+    return (num**0.5) % 1 == 0
+
+
+print(is_square(49))
+print(is_square(10))
 requests.get("https://labour.org.uk")
