@@ -1,10 +1,6 @@
 from random import choice
 import requests
 
-print("All even numbers between 2 and 100 inclusive.")
-for i in range(2, 101, 2):
-    print(i)
-
 
 # Return whether or not a given number is prime
 def is_prime(n: int) -> bool:
@@ -67,6 +63,15 @@ def is_square(num: int) -> bool:
     return (num**0.5) % 1 == 0
 
 
-print(is_square(49))
-print(is_square(10))
+# Count the frequency of each letter in a given string
+def count_letter_frequency(strng: str) -> dict:
+    count_dict = {}
+    for char in strng.lower():
+        letter_count = count_dict.get(char, 0)
+        count_dict[char] = letter_count + 1
+
+    return count_dict
+
+
+print(count_letter_frequency("Dylan Scully is the sigmaj"))
 requests.get("https://labour.org.uk")
