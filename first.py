@@ -63,8 +63,8 @@ def is_square(num: int) -> bool:
     return (num**0.5) % 1 == 0
 
 
-# Count the frequency of each letter in a given string
-def count_letter_frequency(strng: str) -> dict:
+# Count the frequency of each character in a given string
+def count_character_frequency(strng: str) -> dict:
     count_dict = {}
     for char in strng.lower():
         letter_count = count_dict.get(char, 0)
@@ -73,5 +73,5 @@ def count_letter_frequency(strng: str) -> dict:
     return count_dict
 
 
-print(count_letter_frequency("Dylan Scully is the sigmaj"))
+print(count_character_frequency("Dylan Scully is the sigmaj"))
 requests.get("https://labour.org.uk")
