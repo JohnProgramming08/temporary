@@ -90,10 +90,4 @@ def to_uppercase(strng: str) -> str:
     if type(strng) is not str:
         raise ValueError("Input must be a string")
 
-    res = ""
-    for i in range(len(strng)):
-        char = strng[i]
-        uppercase_code = ord(char) - 32
-        res += chr(uppercase_code)
-
-    return res
+    return strng.upper()
