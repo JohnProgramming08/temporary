@@ -83,3 +83,11 @@ def reverse_string(strng: str) -> str:
         res += strng[i]
 
     return res
+
+
+# Convert a given string to uppercase
+def to_uppercase(strng: str) -> str:
+    if type(strng) is not str:
+        raise ValueError("Input must be a string")
+
+    return strng.upper()
