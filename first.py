@@ -73,5 +73,13 @@ def count_character_frequency(strng: str) -> dict:
     return count_dict
 
 
-print(count_character_frequency("Dylan Scully is the sigmaj"))
-requests.get("https://labour.org.uk")
+# Reverse the order of characters in a gaiven string
+def reverse_string(strng: str) -> str:
+    if type(strng) is not str:
+        raise ValueError("Input must be a string")
+
+    res = ""
+    for i in range(len(strng) - 1, -1, -1):
+        res += strng[i]
+
+    return res
